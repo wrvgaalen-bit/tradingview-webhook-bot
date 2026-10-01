@@ -1,0 +1,18 @@
+# Bot settings. No secrets here: API keys and the webhook secret live in .env
+
+exchange:
+  id: binance          # any exchange supported by ccxt, e.g. binance, kraken, bybit
+  sandbox: true        # true = testnet with fake money
+
+trading:
+  dry_run: false       # true = log alerts only, never place orders
+  allowed_symbols:     # alerts for any other symbol are rejected
+    - BTC/USDT
+    - ETH/USDT
+  default_amount: 0.001  # used when the alert has no amount
+  max_amount: 0.01       # alerts asking for more are rejected
+
+server:
+  host: 127.0.0.1      # use 0.0.0.0 on a server so TradingView can reach it
+  port: 8000
+  log_file: bot.log
