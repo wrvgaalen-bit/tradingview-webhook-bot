@@ -4,7 +4,7 @@ A small, safe Python bot that turns **TradingView alerts into exchange orders**.
 When your Pine Script strategy fires an alert, TradingView sends a webhook to this
 bot, the bot checks it, and places a market order on the exchange through [ccxt](https://github.com/ccxt/ccxt).
 
-▶️ **Demo video (2 min):** _add your Loom link here_
+▶️ **Demo video (2 min):** (https://www.loom.com/share/20c982fddc53466fa879ae5c166cefae)
 
 ```mermaid
 flowchart LR
